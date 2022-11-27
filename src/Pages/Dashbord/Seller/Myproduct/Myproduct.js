@@ -21,7 +21,19 @@ const Myproduct = () => {
 
 
 const handleAdvertise = id => {
-  fetch('')
+  fetch(`http://localhost:5000/advertise/${id}`,{
+    method:"PATCH",
+    headers:{
+      'content-type':'application/json'
+    }
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    if(data.modifiedCount > 0 ){
+      toast.success('Advertise added on Home page')
+    }
+  })
 }
 
 
