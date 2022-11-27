@@ -1,0 +1,41 @@
+.productbanner{
+    background-image: url(../../../../assest/product\ cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.productbanner::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+.report-btn{
+    color: rgb(138, 21, 21);
+    background-color: #ebedf8;
+    padding: 8px 0;
+    transition: .4s;
+}
+.report-btn:hover{
+    color: white;
+    background-color: rgb(138, 21, 21);
+}
+.buy-btn{
+    color: #e6e6e9;
+    background-color: #3749bb;
+    padding: 8px 0;
+    transition: .4s;
+}
+.buy-btn:hover{
+    color: #3749bb;
+    background-color: #e6e6e9;
+}
+
