@@ -14,6 +14,9 @@ import PrivateRoute from "./PrivateRoute";
 import Userorder from "../Pages/Dashbord/Userorder/MyOrder/Userorder";
 import Payment from "../Pages/Dashbord/Userorder/Payment/Payment";
 import Dashbord from "../Pages/Dashbord/Dashbord";
+import Userprivate from "./Userprivate";
+import Adminprivate from "./Adminprivate";
+import Sellerprivate from "./Sellerprivate";
 
 
 const router = createBrowserRouter([
@@ -52,29 +55,29 @@ const router = createBrowserRouter([
         },
         {
            path:"/dashbord/userorder",
-           element:<Userorder></Userorder>
+           element:<Userprivate><Userorder></Userorder></Userprivate>
         },
         {
             path:"/dashbord/allbuyer",
-            element:<Allbuyer></Allbuyer>
+            element:<Adminprivate><Allbuyer></Allbuyer></Adminprivate>
         },
         {
             path:"/dashbord/allseller",
-            element:<Allseller></Allseller>
+            element:<Adminprivate><Allseller></Allseller></Adminprivate>
         },
         {
             path:"/dashbord/repoarted",
-            element: <ReportedItem></ReportedItem>
+            element: <Adminprivate><ReportedItem></ReportedItem></Adminprivate>
         },
         {
            path:"/dashbord/addProduct/:email",
-           element:<Addproduct></Addproduct>,
+           element:<Sellerprivate><Addproduct></Addproduct></Sellerprivate>,
            loader: ({params}) => fetch(`http://localhost:5000/seller/${params.email}`)
 
         },
         {
             path:"/dashbord/myproduct",
-            element:<Myproduct></Myproduct>
+            element:<Sellerprivate><Myproduct></Myproduct></Sellerprivate>
         },
         {
             path:"/dashbord/payment/:id",
