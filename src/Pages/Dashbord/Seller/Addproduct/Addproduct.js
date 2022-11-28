@@ -2,13 +2,14 @@ import { useQuery } from '@tanstack/react-query'
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, useNavigate } from 'react-router-dom'
 import { authcontext } from '../../../../Authprovider/Authprovider'
 
 const Addproduct = () => {
   
   const { user } = useContext(authcontext)
   const seller = useLoaderData()
+  const navigate = useNavigate()
   
   const {
     register,
@@ -98,6 +99,7 @@ const Addproduct = () => {
             .then((data) => {
               if(data.insertedId){
                 toast.success("successfully added Product")
+                navigate('/dashbord/myproduct')
               }
             })
         }

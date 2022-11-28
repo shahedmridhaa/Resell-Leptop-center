@@ -17,6 +17,7 @@ import Dashbord from "../Pages/Dashbord/Dashbord";
 import Userprivate from "./Userprivate";
 import Adminprivate from "./Adminprivate";
 import Sellerprivate from "./Sellerprivate";
+import Blog from "../Pages/Blog/Blog";
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                path: "/category_product/:id",
                element:<PrivateRoute><CategoriesProduct></CategoriesProduct></PrivateRoute>,
                loader: ({params}) => fetch(`http://localhost:5000/category_product/${params.id}`)
+            },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
             },
             {
                 path:'/login',

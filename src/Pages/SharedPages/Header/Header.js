@@ -64,7 +64,7 @@ const Header = () => {
           </div>
 
           <Link to='/' className="font-bold text-xl">
-            LEPTOP Zone
+            LEPTOP ZONE
           </Link>
         </div>
 
