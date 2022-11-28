@@ -14,7 +14,16 @@ const Advertised = () => {
    })
     // ==section
     return (
-        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
+        <div>
+        {
+          advertise?.length > 0 &&
+
+          <div className='container mx-auto mt-16 mb-20'>
+            
+           <h1 className='py-10 text-center font-bold text-2xl'>Product Advertised</h1>
+
+
+          <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 '>
           {
             advertise?.map(add => <AdvertisedCard
              key={add._id}
@@ -23,6 +32,10 @@ const Advertised = () => {
             </AdvertisedCard>)
           }
         </div>
+        </div>
+        }
+        </div>
+        
     );
 };
 

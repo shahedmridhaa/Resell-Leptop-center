@@ -8,20 +8,22 @@ const AdvertisedCard = ({advertised}) => {
   return (
     <div>
      
-       {/* <div className="flex items-center space-x-3">
+      <div className=" space-x-3 shadow-lg p-8 rounded-md">
            
-              <div className="mask mask-squircle w-12 h-12">
+            <div className='flex items-center border p-3'>
+                <div className=" w-24">
                 <img src={img} alt="Avatar Tailwind CSS Component" />
               </div>
             
           
-              <div className="">
+              <div className="ml-8">
                 <h2 className='font-semibold text-xl'>{ProductName}</h2> 
                 <p>Resell Price :{resalePrice}</p>
               </div>
+            </div>
              
           
-          </div> */}
+          </div> 
     </div>
   );
 };
