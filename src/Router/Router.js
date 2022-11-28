@@ -18,12 +18,14 @@ import Userprivate from "./Userprivate";
 import Adminprivate from "./Adminprivate";
 import Sellerprivate from "./Sellerprivate";
 import Blog from "../Pages/Blog/Blog";
+import Error from "../Pages/Error/Error";
 
 
 const router = createBrowserRouter([
     {
         path:'/',
         element:<Layout></Layout>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path:'/',
