@@ -14,6 +14,7 @@ const Regester = () => {
   const [currentUser, setCurrentUser] = useState('')
   const [token] = UseToken(currentUser)
   const navigate = useNavigate()
+  
 
   const handleForm = (data) =>{
          registerUser(data.email, data.password)
@@ -84,6 +85,8 @@ const Regester = () => {
   if(token){
     navigate('/')
   }
+  
+
 
 
     return (

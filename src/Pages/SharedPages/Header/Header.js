@@ -2,12 +2,13 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { authcontext } from '../../../Authprovider/Authprovider'
 import useAdmin from '../../../Hook/useAdmin'
+import Loading from '../../Loading/Loading'
 
 const Header = () => {
 
   const {user, userlogout} = useContext(authcontext)
   const [isRole] =  useAdmin(user?.email)
-
+ 
 
 
 
@@ -21,7 +22,8 @@ const Header = () => {
       <li>
         <Link className='rounded-lg hover:text-green-700' to="/">Home</Link>
       </li>
-      <>
+
+      {/* <>
        {
         isRole === "User" &&  <> <li><Link className='rounded-lg hover:text-green-700' to="/dashbord/userorder">Dashbord</Link></li> </>
        }
@@ -30,9 +32,12 @@ const Header = () => {
        }
        {
         isRole === "Admin" &&  <> <li><Link className='rounded-lg hover:text-green-700' to="/dashbord/allbuyer">Dashbord</Link></li> </>
-       }
-       
-      </>
+       }    
+      </> */}
+      <li>
+      <Link className='rounded-lg hover:text-green-700' to="/dashbord">Dashbord</Link>
+      </li>
+
       <li>
         <Link className='rounded-lg hover:text-green-700' to="/blog">Blog</Link>
       </li>
