@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { authcontext } from '../../Authprovider/Authprovider';
 
 const Dashbord = () => {
+    // user context
     const {user} = useContext(authcontext)
     return (
         <div className='flex justify-center items-center h-full'>
