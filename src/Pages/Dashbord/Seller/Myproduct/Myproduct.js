@@ -61,6 +61,7 @@ if(isLoading){
   return <Loading></Loading>
 }
 
+console.log(myproduct);
     return (
    
        <div>
@@ -84,7 +85,7 @@ if(isLoading){
                       key={product._id}
                       >
                         
-                       
+                    ;  
                       <td>{i + 1}</td>
                      <td>
                       <div className="mask mask-squircle w-12 h-12">
