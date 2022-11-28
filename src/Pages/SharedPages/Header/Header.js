@@ -22,18 +22,6 @@ const Header = () => {
       <li>
         <Link className='rounded-lg hover:text-green-700' to="/">Home</Link>
       </li>
-
-      {/* <>
-       {
-        isRole === "User" &&  <> <li><Link className='rounded-lg hover:text-green-700' to="/dashbord/userorder">Dashbord</Link></li> </>
-       }
-       {
-        isRole === "Seller" && <> <li><Link className='rounded-lg hover:text-green-700' to="/dashbord/myproduct">Dashbord</Link></li> </>
-       }
-       {
-        isRole === "Admin" &&  <> <li><Link className='rounded-lg hover:text-green-700' to="/dashbord/allbuyer">Dashbord</Link></li> </>
-       }    
-      </> */}
       <li>
       <Link className='rounded-lg hover:text-green-700' to="/dashbord">Dashbord</Link>
       </li>
@@ -87,11 +75,11 @@ const Header = () => {
          {
           user?.email? 
           <>
-          <Link to="/login" onClick={handleLogout} className="btn">Logout</Link>
+          <Link to="/login" onClick={handleLogout} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-none">Logout</Link>
           </>
           :
           <>
-          <Link to="/login" className="btn">Login</Link>
+          <Link to="/login" className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-none">Login</Link>
           </>
          } 
 
