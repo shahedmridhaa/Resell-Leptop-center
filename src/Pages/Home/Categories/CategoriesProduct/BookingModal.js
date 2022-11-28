@@ -57,7 +57,7 @@ import { authcontext } from '../../../../Authprovider/Authprovider';
  <input type="checkbox" id="booking-modal" className="modal-toggle" />
  <div className="modal">
    <div className="modal-box relative">
-      
+   <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
      
      <form onSubmit={handleSubmit(handleForm, product?.img)} className='w-96 mx-auto'>
      <input type="text" name="name" defaultValue={user?.displayName} readOnly className="bg-gray-100 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-96  pl-3 my-2 "
