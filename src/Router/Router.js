@@ -13,6 +13,7 @@ import CategoriesProduct from "../Pages/Home/Categories/CategoriesProduct/Catego
 import PrivateRoute from "./PrivateRoute";
 import Userorder from "../Pages/Dashbord/Userorder/MyOrder/Userorder";
 import Payment from "../Pages/Dashbord/Userorder/Payment/Payment";
+import Dashbord from "../Pages/Dashbord/Dashbord";
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
        element:<PrivateRoute><DashbordLayout></DashbordLayout></PrivateRoute>,
        children:[
       
+        {   
+          path:"/dashbord",
+          element:<Dashbord></Dashbord> 
+        },
         {
            path:"/dashbord/userorder",
            element:<Userorder></Userorder>
