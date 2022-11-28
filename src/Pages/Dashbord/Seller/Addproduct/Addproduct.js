@@ -6,9 +6,10 @@ import { useLoaderData } from 'react-router-dom'
 import { authcontext } from '../../../../Authprovider/Authprovider'
 
 const Addproduct = () => {
+  
   const { user } = useContext(authcontext)
   const seller = useLoaderData()
-  console.log(seller);
+  
   const {
     register,
     formState: { errors },

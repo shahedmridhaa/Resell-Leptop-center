@@ -1,61 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-const AdvertisedCard = ({ add }) => {
-  console.log('sadfasdfdsaf', add)
-  const {
-    condition,
-    resellPrice,
-    productName,
-    img,
-    category_name,
-    OrginalPrice,
-    date,
-  } = add
+const AdvertisedCard = ({advertised}) => {
+  
+  const {ProductName , resalePrice, img} = advertised
+ 
+
   return (
     <div>
-      {add? (
-        <>
-
-
-            
-
-          <div class="bg-white border rounded-xl shadow-sm sm:flex dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-            <div class="flex-shrink-0 relative w-full rounded-t-xl overflow-hidden pt-[40%] sm:rounded-l-xl sm:max-w-[15rem] md:rounded-tr-none md:max-w-xs">
-              <img
-                className="w-full h-full absolute top-0 left-0 object-cover"
-                src={img}
-                alt="I..."
-              />
-            </div>
-            <div class="flex flex-wrap">
-            <button className='btn btn-sm m-2 bg-gradient-to-r from-purple-500 to-pink-500'>Advertised</button>
-              <div class="p-4 flex flex-col h-full sm:p-7">
-               
-                <h3 class="text-lg font-bold text-gray-800 dark:text-white">
-                  {productName}
-                </h3>
-                <span class="mt-1 text-gray-800 dark:text-gray-400">
-                  condition: {condition}
-                </span>
-                <span class="mt-1 text-gray-800 dark:text-gray-400">
-                  Market Price: {OrginalPrice}
-                </span>
-                <span class="mt-1 text-gray-800 dark:text-gray-400">
-                  Resell Price: {resellPrice}
-                </span>
-                <span class="mt-1 text-gray-800 dark:text-gray-400">
-                  Category: {category_name}
-                </span>
-               
+     
+       {/* <div className="flex items-center space-x-3">
+           
+              <div className="mask mask-squircle w-12 h-12">
+                <img src={img} alt="Avatar Tailwind CSS Component" />
               </div>
-            </div>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
+            
+          
+              <div className="">
+                <h2 className='font-semibold text-xl'>{ProductName}</h2> 
+                <p>Resell Price :{resalePrice}</p>
+              </div>
+             
+          
+          </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default AdvertisedCard
+export default AdvertisedCard;

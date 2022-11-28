@@ -14,7 +14,6 @@ const Categories = () => {
              }
      })
 
-console.log(categories);
 
     if(isLoading){
         return <Loading></Loading>

@@ -4,23 +4,24 @@ import AdvertisedCard from './AdvertisedCard';
 
 const Advertised = () => {
 
-    const {data : advertised} =useQuery({
-        queryKey:['advertised'],
-        queryFn: async() =>{
-            const res = await fetch('http://localhost:5000/showadvertised')
-            const data = res.json()
-            return data
-        }
-    })
-
+   const {data: advertise} = useQuery({
+    queryKey:["advertise"],
+    queryFn: async()=>{
+        const res = await fetch('http://localhost:5000/advertise?isAdvertise=true')
+        const data = res.json()
+        return data
+    }
+   })
+    // ==section
     return (
-        <div className='container mx-auto grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mt-20 mb-32 gap-5'>
-           {
-             advertised?.map(adds => <AdvertisedCard
-             key={adds._id} add={adds}
-             ></AdvertisedCard> )
-
-           }
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
+          {
+            advertise?.map(add => <AdvertisedCard
+             key={add._id}
+             advertised={add}
+             >
+            </AdvertisedCard>)
+          }
         </div>
     );
 };

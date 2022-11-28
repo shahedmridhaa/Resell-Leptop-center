@@ -98,8 +98,17 @@ if(isLoading){
                                  product?.paid? 
                                  <>Sold</>:
                                  <>Available</>
-                            }</td> 
-                          <td><button onClick={() => handleAdvertise(product._id)} className='btn btn-sm btn-outline'>Advertised</button></td>
+                            }
+                            </td> 
+                            <td>
+                              {
+                                product?.paid?
+                                <></>
+                                :
+                                <><button onClick={() => handleAdvertise(product._id)} className='btn btn-sm btn-outline'>Advertised</button></>
+                              }
+                            </td>
+                          
                            <td className='text-red-700 text-2xl' onClick={() => handleDelete(product)}><AiFillDelete/></td>
                       </tr>)
                      }  
