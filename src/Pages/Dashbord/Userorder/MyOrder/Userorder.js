@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { all } from 'axios';
 import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
 import { AiFillDelete } from 'react-icons/ai';
@@ -67,7 +68,10 @@ const Userorder = () => {
     <tbody>
      
 
-      {
+     {
+      allOrders?.length >0?
+      <>
+       {
         allOrders?.map(order => <tr key={order._id}>
            
         <td>
@@ -110,6 +114,13 @@ const Userorder = () => {
         </th>    
         </tr>)
       }
+      </>:
+      <>
+      <div className='flex justify-center items-center h-screen'>
+            <h1 className='text-2xl font-bold p-10'>You don't have any order</h1>
+        </div>
+      </>
+     }
      
     
     </tbody>
