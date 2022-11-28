@@ -23,7 +23,7 @@ const Testimonial = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p class="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                        <p class="xl:w-80 text-base leading-normal text-center mt-4">When you need an good Leptop, I suggest you to buy leptop this website. Thank you for all your help-I will be recommending you to everyone</p>
                     </div>
                     <div class="text-white dark:text-gray-800 group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +52,8 @@ const Testimonial = () => {
                 </div>
                 <div class="flex flex-col items-center justify-center mt-10">
                     <img src="https://i.ibb.co/ZgF5Zzz/avatar-1.png" alt="profile pictre" class="w-12 h-12" />
-                    <p class="text-base font-semibold leading-4 my-2 text-gray-800 dark:text-white  ">Tom Koch</p>
-                    <p class="text-base leading-4 text-center text-gray-600 dark:text-gray-200  ">Developer</p>
+                    <p class="text-base font-semibold leading-4 my-2 text-gray-800 ">Akbar Miyazi</p>
+                    <p class="text-base leading-4 text-center text-gray-600 ">Enginner</p>
                 </div>
             </div>
             <div>
@@ -70,7 +70,7 @@ const Testimonial = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p class="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                        <p class="xl:w-80 text-base leading-normal text-center mt-4">I bought a leptop in this website. I get quality full product. I am very happy to buy leptop in this website</p>
                     </div>
                     <div class="text-white dark:text-gray-800 group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,8 +99,8 @@ const Testimonial = () => {
                 </div>
                 <div class="flex flex-col items-center justify-center mt-10">
                     <img src="https://i.ibb.co/8BLjmqz/avatar-2.png" alt="profile pictre" class="w-12 h-12" />
-                    <p class="text-base font-semibold leading-4 my-2 text-gray-800 dark:text-white  ">Alan Max</p>
-                    <p class="text-base leading-4 text-center text-gray-600 dark:text-gray-200  ">Designer</p>
+                    <p class="text-base font-semibold leading-4 my-2 text-gray-800 ">Alan Max</p>
+                    <p class="text-base leading-4 text-center text-gray-600  ">student</p>
                 </div>
             </div>
             <div>
@@ -117,7 +117,7 @@ const Testimonial = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p class="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                        <p class="xl:w-80 text-base leading-normal text-center mt-4">I recomanded all people to buy leptop in this website because there product and their service are awesome.</p>
                     </div>
                     <div class="text-white dark:text-gray-800 group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +146,8 @@ const Testimonial = () => {
                 </div>
                 <div class="flex flex-col items-center justify-center mt-10">
                     <img src="https://i.ibb.co/y0KCX7p/avatar-3.png" alt="profile pictre" class="w-12 h-12" />
-                    <p class="text-base font-semibold leading-4 my-2 text-gray-800 dark:text-white  ">Kera Joo</p>
-                    <p class="text-base leading-4 text-center text-gray-600 dark:text-gray-200  ">Support</p>
+                    <p class="text-base font-semibold leading-4 my-2 text-gray-800   ">Kera Joo</p>
+                    <p class="text-base leading-4 text-center text-gray-600  ">Teacher</p>
                 </div>
             </div>
           
