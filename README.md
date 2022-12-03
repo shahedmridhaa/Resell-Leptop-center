@@ -3,6 +3,9 @@
 ## Admin: 
    Email: shahedmridha96@gmail.com
    PassWord: 111111
+   
+## Server:
+   https://github.com/shahedmridhaa/Resell-leptop-center-server
 
 ### Project feature and funcationalities
   - If a visitor can visit this site he/she see Home $ Blog Page
