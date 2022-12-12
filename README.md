@@ -15,7 +15,7 @@
   2. Seller
   3. Buyer
   -  A log in use can buy product in this site and then the use report the product to admin.
-  -  If a user can buy this product then his this product show sold out text 
+  -  If a user can buy this product then this product show sold out text 
   -  A seller can Added his porduct in this site and he/she addvertise or remove her/his product.
   -  A Admin can see all buyer, all seller and see all reported item
   -  A Admin can delete specafic seller or specafic user
