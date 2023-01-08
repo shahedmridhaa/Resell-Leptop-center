@@ -22,12 +22,14 @@
 
 ### Use Language & famwork
    - React js
-   - Tailwind 
-   - daisy ui
+   - Node js
+   - Express js
    - Node js
    - MongoDb
-   - Express js
-   
+   - Firebase
+   - Tailwind
+   - daisy ui
+   -    
 ### Payment Method
    - Stripe   
 
